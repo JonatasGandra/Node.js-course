@@ -22,9 +22,6 @@ const connection = mysql.createConnection({
    })
 
    //LISTA OS REGISTROS DO BANCO DE DADOS
-     connection.connect(function (err){ 
-        console.log("conexão com o banco de dados realizado com sucesso! Id da conexão " + connection.threadId)
-    });
 
     connection.query('SELECT * FROM users', function(err, rows, fields){
         if(!err){
