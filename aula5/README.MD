@@ -42,11 +42,11 @@ CREATE TABLE `users` (
 * * "SELECT id, name, email FROM users WHERE email = 'jonatassgnadra2@gmail.com'LIMIT 1;" /*pode ultilizar AND, OR como operadores lógicos na condião*/
 
 * Ordenar os registros no banco de dados
-* * "SELECT id, name, email FROM users ORDER  BY id ASC;" /*podemos ordenar por name epo email tambem*/
+* * "SELECT id, name, email FROM users ORDER  BY id ASC;" /*podemos ordenar por name e poR email tambem*/
 * * "SELECT id, name, email FROM users ORDER  BY id DESC;" /* o DESC irá ordernal pela ordem de seleção dos registros. assim o ultimo sera o primeiro*/
 
 * editar registro do banco de dados
-* * "UPDATE users SET name='joanatas1a', email='jonatassgandra1a@gmail.com' WHERE id=2;" /*musou o nome e o email do conteudo no id 2*/
+* * "UPDATE users SET name='joanatas1a', email='jonatassgandra1a@gmail.com' WHERE id=2;" /*mudou o nome e o email do conteudo no id 2*/
 
 * deletar registro
 * * "DELETE FROM users WHERE id=7;"
