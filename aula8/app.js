@@ -29,6 +29,13 @@ const connection = mysql.createConnection({
     }
    })
 
+   connection.query("DELETE FROM users WHERE id=7;", (err, result)=>{
+    if(!err){
+        console.log("usuário deletado com sucesso!");
+    }else{
+        console.log('Erro: Usuàrio não deletado')
+    }
+   })
 
    //LISTA OS REGISTROS DO BANCO DE DADOS
 
