@@ -21,6 +21,15 @@ const connection = mysql.createConnection({
     }
    })
 
+   connection.query("UPDATE users SET name ='jonatas10', email = 'jonatassgandra10@gmail.com' WHERE id = 3", (err, result)=>{
+    if(!err){
+        console.log("usuário editado com sucesso!");
+    }else{
+        console.log('Erro: Usuàrio não editado com sucesso!')
+    }
+   })
+
+
    //LISTA OS REGISTROS DO BANCO DE DADOS
 
     connection.query('SELECT * FROM users', function(err, rows, fields){
