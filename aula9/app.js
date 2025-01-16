@@ -44,10 +44,10 @@ const user = sequelize.define('users', {
 user.sync()
 
 //se haver uma tabela chamada users, excluirá a tabela e criará outra
-//user.sync({force: true})
+user.sync({force: false})
 
 //se houver uma diferença entre o que foi criado no node para o que ja esta no banco de dados, haverá edição da tabela no mysql
-//user.sync({alter: true})
+user.sync({alter: false})
 
 //Cadastrar registro no banco de dados (INSERT)
 
